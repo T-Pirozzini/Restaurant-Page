@@ -4,7 +4,7 @@ import contacts from './contacts';
 
 
 const content = document.querySelector('#content');
-console.log(content);
+// console.log(content);
 
 
 home.renderHome();
