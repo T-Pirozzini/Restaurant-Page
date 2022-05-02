@@ -1,16 +1,57 @@
-.content-container {
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
   display: flex;
   justify-content: center;
+}
+.content-container {
+  display: flex;
+  justify-content: center;  
   align-items: center;
   flex-direction: column;
+  border: 1px solid black;
+  box-shadow: 10px 5px 5px rgba(212, 207, 207, 0.39);
+  width: 60%;rgb(168, 160, 160)rgba(168, 160, 160, 0.411);
+  background-color: #edaa8b;
+  background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+  width: 80vw;
+  height: 90vh;
+  margin: 20px;
 }
 
 .home-title {
-  color: red;
+  color: black;
+  font-family: 'Sonsie One', cursive;
+  font-size: 3.5em;
+  font-weight: 100;
+  padding: 30px;
 }
 
 article {
-  border: 2px dotted green;
-  width: 20%;
-  margin: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+  box-shadow: 20px -10px rgba(75, 74, 77, 0.185);
+  background-color: #9c9c9c;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png"); 
+  color: white; 
+  width: 30%;
+  margin: 15px;
+  padding: 20px; 
+}
+
+h2 {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-weight: 100;
+  font-size: 2em;
+
+}
+
+p {
+  font-family: 'Dekko', cursive;
 }
