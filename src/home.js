@@ -26,36 +26,30 @@ const home = (() => {
     testimonial.classList.add('testimonial');
     testimonial.textContent = 'Do you like potatos? Well Spuddies is the place to be! Everything potato for a great price!';
     const signature = document.createElement('p');
-    signature.textContent = 'Mr. Potato Head';
+    signature.textContent = '- Mr. Potato Head';
     article1.appendChild(testimonialTitle);
     article1.appendChild(testimonial);
     article1.appendChild(signature);
 
     // hours
+    const hoursArr = [
+      'Sunday: 8am - 8pm',
+      'Monday: 6am - 6pm',
+      'Tuesday: 6am - 6pm',
+      'Wednesday: 6am - 6pm',
+      'Thursday: 6am - 10pm',
+      'Friday: 6am - 10pm',
+      'Saturday: 8am - 10pm',
+    ]
     const hourTitle = document.createElement('h2');
     hourTitle.textContent = 'Hours';
-    const hoursM = document.createElement('p');
-    const hoursT = document.createElement('p');
-    const hoursW = document.createElement('p');
-    const hoursTH = document.createElement('p');
-    const hoursF = document.createElement('p');
-    const hoursSA = document.createElement('p');
-    const hoursSU = document.createElement('p');
-    hoursM.textContent = 'Monday: 6am - 6pm'
-    hoursT.textContent = 'Tuesday: 6am - 6pm'
-    hoursW.textContent = 'Wednesday: 6am - 6pm'
-    hoursTH.textContent = 'Thursday: 6am - 10pm'
-    hoursF.textContent = 'Friday: 6am - 10pm'
-    hoursSA.textContent = 'Saturday: 8am - 10pm'
-    hoursSU.textContent = 'Sunday: 8am - 8pm' 
     article2.appendChild(hourTitle)
-    article2.appendChild(hoursM)
-    article2.appendChild(hoursT)
-    article2.appendChild(hoursW)
-    article2.appendChild(hoursTH)
-    article2.appendChild(hoursF)
-    article2.appendChild(hoursSA)
-    article2.appendChild(hoursSU)
+    // generate hours with hoursArr
+    for (let day of hoursArr) {      
+      const dayHours = document.createElement('p')
+      dayHours.textContent = day;
+      article2.appendChild(dayHours);
+    }  
 
     // location
     const locationTitle = document.createElement('h2');
