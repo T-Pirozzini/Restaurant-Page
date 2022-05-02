@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=function(){console.log("Render Home")},n=function(){console.log("Render Menu")},e=function(){console.log("Render Contacts")},c=document.querySelector("#content");console.log(c),o(),e(),n()})();
