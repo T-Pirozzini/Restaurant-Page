@@ -1,13 +1,14 @@
-import home from './home';
-import menu from './menu';
-import contacts from './contacts';
+import renderHome from './home';
+import renderNav from './nav';
+
+renderHome();
+renderNav();
 
 
-const content = document.querySelector('#content');
-// console.log(content);
 
 
-home.renderHome();
-contacts.renderContacts();
-menu.renderMenu();
+
+
+
+
 

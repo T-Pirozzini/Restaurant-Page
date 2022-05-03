@@ -1,8 +1,6 @@
-const home = (() => {
-  // select content
-  const content = document.querySelector('#content');  
-
-  function renderHome() {    
+  export default function renderHome() {   
+    // select content
+    const content = document.querySelector('#content');
     content.classList.add('content-container');    
 
     // restaurant title
@@ -29,7 +27,7 @@ const home = (() => {
     signature.textContent = '- Mr. Potato Head';
     article1.appendChild(testimonialTitle);
     article1.appendChild(testimonial);
-    article1.appendChild(signature);
+    article1.appendChild(signature);    
 
     // hours
     const hoursArr = [
@@ -57,37 +55,5 @@ const home = (() => {
     const location = document.createElement('p');
     location.textContent = '456 Potato Patch Lane, Farmville, Russet';
     article3.appendChild(locationTitle);
-    article3.appendChild(location);
-
-    // Nav bar
-    const footer = document.createElement("footer");
-    content.appendChild(footer);
-    const menu = document.createElement('button');
-    menu.textContent = "Menu";
-    menu.classList.add('menu');    
-    menu.addEventListener("click", (e) => {
-      if (e.target.classList.contains("menu")) {
-        console.log("Menu has been clicked!")
-        // showMenu();
-      }
-    })    
-    const contact = document.createElement('button');
-    contact.textContent = "Contact";
-    contact.classList.add('contact');    
-    contact.addEventListener("click", (e) => {
-      if (e.target.classList.contains("contact")) {
-        console.log("Contact has been clicked!")
-        // showContact();
-      }
-    })    
-    footer.appendChild(menu);
-    footer.appendChild(contact);
-    
-  }
-
-  return {
-    renderHome,
-  };
-})();
-
-export default home;
+    article3.appendChild(location); 
+  } 
