@@ -9,43 +9,40 @@ export default function renderNav() {
   
   let currentPage = ''; 
 
+  // render home
   const home = document.createElement('button');
   home.textContent = "Home";
   home.classList.add('home');    
   home.addEventListener("click", (e) => {
     if (e.target.classList.contains("home")) {
-      content.innerHTML = ''; 
-      console.log("Home has been clicked!")
-      currentPage = "home";
-      console.log(currentPage);
+      content.innerHTML = '';      
+      currentPage = "home";      
       renderHome();
       renderNav();
     }   
   })
 
+  // render menu
   const menu = document.createElement('button');
   menu.textContent = "Menu";
   menu.classList.add('menu');    
   menu.addEventListener("click", (e) => {
     if (e.target.classList.contains("menu")) {
-      content.innerHTML = '';      
-      console.log("Menu has been clicked!");
-      currentPage = "menu";
-      console.log(currentPage);
+      content.innerHTML = '';    
+      currentPage = "menu";      
       renderMenu();
       renderNav();
     }
   })  
 
+  // render contact
   const contact = document.createElement('button');
   contact.textContent = "Contact";
   contact.classList.add('contact');    
   contact.addEventListener("click", (e) => {
     if (e.target.classList.contains("contact")) {
-      content.innerHTML = ''; 
-      console.log("Contact has been clicked!")
-      currentPage = "contact";
-      console.log(currentPage);
+      content.innerHTML = '';      
+      currentPage = "contact";      
       renderContacts();
       renderNav();
     }   

@@ -27,7 +27,6 @@ export default function renderContacts() {
   contact.textContent = "We look forward to hearing from you!";
   
   contactForm.appendChild(contact);
-
   content.appendChild(contactForm);  
 }
 
